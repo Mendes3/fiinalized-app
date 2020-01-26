@@ -65,8 +65,8 @@ public class MQTTHelper {
         MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
         mqttConnectOptions.setAutomaticReconnect(true);
         mqttConnectOptions.setCleanSession(false);
-        mqttConnectOptions.setUserName(username);
-        mqttConnectOptions.setPassword(password.toCharArray());
+//        mqttConnectOptions.setUserName(username);
+//        mqttConnectOptions.setPassword(password.toCharArray());
         try {
 
             mqttAndroidClient.connect(mqttConnectOptions, null, new IMqttActionListener() {
